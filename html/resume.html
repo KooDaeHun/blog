@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title></title>
+	<link href="C:\front\강의\블로그\vendor\devicons\css\devicons.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -11,24 +12,121 @@
 <body>
 	<div class="wrapper">
 		<div class="leftCategory">
+			<!-- 로고 -->
 			<div class="logo">
-				<a href="#"><img class="logoImg" src="C:\front\강의\12월\개인블로그_프로젝트\img\stone.jpg" id="home"></a>
+				<a href="#"><img class="logoImg" src="C:\front\강의\블로그\img\stone.jpg" id="home"></a>
 			</div>
-			<div id="menuBoder">
-				<div class="menu" id="101">
-					menu1
-				</div>
-				<div class="menu" id="102">
-					menu2
-				</div>
-				<div class="menu" id="103">
-					menu3
-				</div>
+			<!-- 메뉴박스 -->
+			<div class="menuBoder">
+				<ul class="menu">
+					<li>
+						<a class="menuA" href="#">menu1</a>
+
+						<ul>
+							<li><a href="#">menu1_1</a></li>
+							<li><a href="#">menu1_2</a></li>
+							<li><a href="#">menu1_3</a></li>
+						</ul>
+					</li>
+				</ul>
 			</div>
-		</div>
+			</div>
+
 
 		<div class="bodyCategory">
-			RESUME!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="resumeName">
+					</br></br></br>
+      				<span class="name resumeLastName" id="dayAndNightAdjColor">DAEHUN</span>
+            		<span class="name resumeFirstName">KOO</span><a href="https://github.com/"><span class="devicons devicons-github" id="myGitHub"></span></a>
+
+            		<p class="resumeAddress">3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·</p>
+        	 	   	<a class="resumeEmail" href="https://www.google.com/gmail/">igoya93@gmail.com</a>
+        			<p class="resumeMe" id="dayAndNightAdjColor">I'd like to apply for the developer!</p></br></br>
+
+        			<p class="resumeEducation">EDUCATION</p>
+        			<span class="resumeEduSummary" id="dayAndNightAdjColor">Computer Science Software at Daegu National University</span>
+        			<p class="resumeEduTerm">March 2012 - February 2018</p></br></br>
+
+        			<p class="resumeSkils">SKILS</p>
+					<span class="devicons devicons-html5" title="HTML5"></span>
+					<span class="devicons devicons-css3" title="CSS"></span>
+					<span class="devicons devicons-github" title="GitHub"></span>
+					<span class="devicons devicons-javascript" title="JavaScript"></span>
+					<span class="devicons devicons-bootstrap" title="BootStrap"></span>
+					<span class="devicons devicons-java" title="Java"></span>
+					<span class="devicons devicons-unity_small" title="Unity"></span>
+					<span class="devicons devicons-eclipse" title="Eclipse"></span></br></br></br>
+
+					<p class="resumeInterest">INTEREST</p>
+					<p>I like the process where one small piece of work is collected and the result becomes a result.</p>
+            		<p>That's why we're looking for leather crafts, mechanical timepieces,</p>
+             
+             		<p>The process of producing outcomes is enjoying a very tight taste.</p>
+             		<p>When the hand of a hand hand-knit itself and the result becomes the desired result.</p>
+             	    <p>As a result, I felt the joy of the leather when it was finished.</p>
+              	 	<p>So I decided to develop a developer, and I enjoy developing them.</p>
+
+
+
+
+			</div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		</div>
 
 		<div class="rightCategory">
@@ -37,12 +135,14 @@
 				최근 글 목록
 			</div>
 			<div class="read">
-				<a href="#">[category] 글제목 내용내용내용내0000용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+				[category] 글제목 내용내용내용내0000용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
 				내용내용내용내용내용내용내용내용내용내용내용내용내용내용1111내용내용내용내용내용내용내용내용내용내내용내용내내용내용
-				내용내용내내용내용내내내용내용내내용내용내내용내용222222용내용내용내</a>
+				내용내용내내용내용내내내용내용내내용내용내내용내용222222용내용내용내
 			</div>
 			<div class="read">
-				[category] 글제목
+				[category] 글제목내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
+				내용내용내용내용내용내용내용내용내용내용내용내용내용내용1111내용내용내용내용내용내용내용내용내용내내용내용내내용내용
+				내용내용내내용내용내내내용내용내내용내용내내용내용222222용내용
 			</div>
 			<div class="read">
 				[category] 글제목
@@ -55,11 +155,10 @@
 			</div>
 			</div>
 			<div class="about">
-				<div class="aboutResume" id="resume">
-					<span style="font-weight: bold;">RESUME</span>
+				<div class="resumeLink" id="resume">
+					RESUME
 				</div>
 				<div class="aboutSNS">
-					
 				</div>
 			</div>
 		</div>
@@ -69,7 +168,6 @@
 			// 마우스 클릭 : console.log 출력
 			$(".menu").click(function(){
 				var id = $(this).attr('id');
-				alert("id : " + id);
 			});
 
 			$("#resume").on("click",function(){
@@ -86,8 +184,35 @@
 				/* 다른 파일(html)로 이동 */
 				location.href = "./index.html";
 			});
+			$(".menu").hover(function(){
+				// 해당 li 태그에 속한 ul 태그를 보여준다
+				$("ul:first",this).show();
+			}, function(){
+				// 마우스 뗐을 때 : 숨긴다.
+				$("ul:first",this).hide();
+			});
 		});
+     	 
 
+     	 function changeColor(input){
+     	  	if(input == 'day'){
+        		 document.querySelector('body').style.backgroundColor='white';
+        		 document.querySelector('body').style.color='#868e96 ';
+   	    	 	 var y = document.getElementsByClassName('dayAndNightAdjColor');
+    	    	 for(i = 0; i < y.length; i++){
+          		 console.log('day');
+         	 	 y[i].style.color = 'black';
+				}
+       		} else if(input == 'night'){
+       		  	document.querySelector('body').style.backgroundColor='black';
+        	 	document.querySelector('body').style.color='white';
+        	 	var x = document.getElementsByClassName('dayAndNightAdjColor');
+         		for(i = 0; i < x.length; i++){
+          		console.log('night');
+          		x[i].style.color = 'white';
+        		}
+       		}
+     	} 		
 	</script>
 
 </body>

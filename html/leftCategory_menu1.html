@@ -12,7 +12,7 @@
 	<div class="wrapper">
 		<div class="leftCategory">
 			<div class="logo" style="text-align: center">
-				<img class="logoImg" src="C:\front\강의\12월\개인블로그_프로젝트\img\stone.jpg">
+				<img class="logoImg" src="C:\front\강의\블로그\img\stone.jpg" id="home">
 			</div>
 			<div id="menuBoder">
 				<div class="menu" id="101">
@@ -72,7 +72,23 @@
 		</div>
 	
 	<script>
-		
+		$(document).ready(function(){
+			// 마우스 클릭 : console.log 출력
+			$("#home").on("click",function(){
+				/* 다른 사이트로 이동 */
+				// $(location).attr('href',"http://www.naver.com");
+				// location.href = "http://www.naver.com";
+				/* 다른 파일(html)로 이동 */
+				location.href = "./index.html";
+			});
+			$("#resume").on("click",function(){
+				/* 다른 사이트로 이동 */
+				// $(location).attr('href',"http://www.naver.com");
+				// location.href = "http://www.naver.com";
+				/* 다른 파일(html)로 이동 */
+				location.href = "./resume.html";
+			});
+		});
 	</script>
 
 </body>

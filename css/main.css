@@ -1,21 +1,29 @@
+/*!
+ * Start Bootstrap - Resume v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+
 *{
 	margin:0;
+	color: #4B4B4B;
 }
- a:link { color: black; text-decoration: none;}
- a:visited { color: black; text-decoration: none;}
+li {list-style-type: none;}
+a:link { text-decoration: none;}
+a:visited { color: #4B4B4B; text-decoration: none;}
 
 @-webkit-keyframes hoveringMenuColor {
 	to {
 		background-color: white;
 		border-color: white;
-		color: dodgerblue;
+		color: #6CC0FF;
 	}
 }
 @-webkit-keyframes hoveringCurrentRead {
 	to {
 		background-color: white;
 		border-bottom-color: white;
-		color: dodgerblue;
+		color: #6CC0FF;
 	}
 }
 
@@ -26,23 +34,85 @@
 			.logo{width: 100%; height: 105px; float: center; display: block;}
 				.logoImg{width: auto; height: auto; max-width: 110px; display: block; 
 						 margin-left: auto; margin-right: auto; max-height: 100px;}
-			.menuBoder{width: 100%;}
-			.menu{width: 95.8%; height: 66px; float: left; text-align: center; line-height:59px;}
-			.menu:hover { animation-name: hoveringMenuColor;
-						  line-height:50px; 
-						  border-width:5px;
-						  border-style:solid;
-						  animation-duration: 0.5s;
-						  animation-fill-mode:forwards;
-						  cursor:pointer;
-						  height: 56px;
-						  border-color: lightgray;}
-				.menu1Border{width: 100%; height: 168px; background-color: red; float: left; display: inline-block;}
-					.menu1{width: 100%; height: 56px; background-color: orange; float: left; text-align: center; padding-left: 10%;}
-						.menu1_1{width: 70%; background-color: orange;}
+			
+
+			.menuBoder{width: 100%; height: 258px; float: left; text-align: center; display: inline-block; line-height:60px; padding: 0;}
+			.menu {margin:0; padding:0;}
+			.menu a { display:block; text-decoration: none;}
+			.menu a:hover{
+					animation-name: hoveringMenuColor;
+                    line-height:50px; 
+                    border-width:5px;
+                    border-style:solid;
+                    animation-duration: 0.5s;
+                    animation-fill-mode:forwards;
+                    cursor:pointer;
+                    height: 56px;
+                    border-color: lightgray;
+			}
+			.menu li { list-style: none; position: relative; }
+			
+			.menu ul{display: none; padding:0; position: absolute; left:105%; top:0; width:100%;}
+			.menu ul:hover{
+					animation-name: hoveringMenuColor;
+                    line-height:50px; 
+                    border-width:5px;
+                    border-style:solid;
+                    animation-duration: 0.5s;
+                    animation-fill-mode:forwards;
+                    cursor:pointer;
+                    height: 56px;
+                    border-color: lightgray;
+			}
 		
-		.bodyCategory{width: 70%; height: 768px; float: left; text-align: center; font-size: 50pt; font-weight: bolder; line-height: 500px;}
-		
+
+
+
+
+
+
+
+
+
+
+
+
+		.bodyCategory{width: 70%; height: 768px; float: left;}
+				.resumeName{width: 100%; height: 768px; text-align: center;}
+					.name{width: 100%; height: 30%; text-align: center; font-weight: bolder; line-height: 68pt;  font-size: 50pt;}
+						.resumeFirstName{color: #6CC0FF;}
+						#myGitHub{font-size: 2rem; color: #4B4B4B; margin: 0;}
+						#myGitHub:hover{color: #6CC0FF;}						
+				.resumeEmail{color: gray;}
+				.resumeEmail:hover{color: #6CC0FF;}
+				
+				.resumeEducation{line-height: 45pt; font-size: 30pt; font-weight: bolder;}
+				.resumeEduTerm{color: #6CC0FF;}
+
+				.resumeSkils{line-height: 45pt; font-size: 30pt; font-weight: bolder;}
+				.devicons{font-size: 2.45rem; margin: 0;}
+				.devicons:hover{color: #6CC0FF;}
+
+				.resumeInterest{line-height: 45pt; font-size: 30pt; font-weight: bolder;}
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		.rightCategory{width: 15%; height: 694px; background-color: white; float: left; padding-top: 5%; box-shadow: -3px 0px 5px 0.5px rgba(153,153,153, 0.5);}
 			.currentReadBorder{width: 100%; height: 479px;}
 			.currentRead{width: 100%; height: 30px; float: left; text-align: center; line-height: 31px;}
@@ -57,10 +127,9 @@
 						 	  height: 200px;
 						      border-color: lightgray;}
 			.about{width: 100%; height: 215px; float: left; text-align: center;}
-				.aboutResume{width: 70%; height: 50px; line-height: 49px;
-							 text-shadow: 3.5px 3.5px 0px rgba(0,0,0, 0.15); font-size: 30px;
+				.resumeLink{width: 70%; height: 50px; line-height: 49px;
+							 text-shadow: 3.5px 3.5px 0px rgba(0,0,0, 0.15);
 							 border-radius: 15px; display: inline-block; border: 2px solid;  transition:all 0.5s; cursor: pointer;
-							 font-size: 22pt; font-weight: bolder;}
-				.aboutResume:hover{	box-shadow: inset 0px 0px 1px 8px rgba(153,153,153, 0.5);
+							 font-size: 23pt; font-weight: bolder;}
+				.resumeLink:hover{	box-shadow: inset 0px 0px 1px 8px rgba(153,153,153, 0.5);
 									text-shadow: 0px 0px 0px rgba(255,225,255,0);}
-					
