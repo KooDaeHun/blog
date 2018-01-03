@@ -2,63 +2,141 @@
 <html>
 <head>
 	<title></title>
+	<link href="C:\front\강의\블로그\vendor\devicons\css\devicons.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-<style>
-
-</style>
 <body>
 	<div class="wrapper">
 		<div class="leftCategory">
+			<!-- 로고 -->
 			<div class="logo">
 				<a href="#"><img class="logoImg" src="C:\front\강의\블로그\img\stone.jpg" id="home"></a>
 			</div>
-			<div id="menuBoder">
-				<div class="menu" id="101">
-					menu1
-				</div>
-				<div class="menu" id="102">
-					menu2
-				</div>
-				<div class="menu" id="103">
-					menu3
-				</div>
+			<!-- 메뉴박스 -->
+			<div class="menuBoder">
+				<ul class="menu">
+					<li>
+						<a href="#">menu1</a>
+						<ul>
+							<li><a href="#">menu1_1</a></li>
+							<li><a href="#">menu1_2</a></li>
+							<li><a href="#">menu1_3</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		<div class="about">
+			<div class="writeLink" id="write">
+				글 쓰기
 			</div>
 		</div>
 
-		<div class="bodyCategory">
 		</div>
-
+		<div class="bodyCategory">
+			<div class="mainPageName">My Picture</div>
+			<div class="wrapPic top left">
+				<div class="outPic">
+					<div class="inPic">
+						<div class="upPic">
+							<img class="upPicture" src="../img/superocean.jpg">
+						</div>
+						<div class="downContant" id="contant">
+							Breitling SuperOcean II
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapPic top">
+				<div class="outPic">
+					<div class="inPic">
+						<div class="upPic">
+							<img class="upPicture" src="../img/carrera.jpg">
+						</div>
+						<div class="downContant" id="contant">
+							TagHeuer Carrera Heritage
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapPic top right">
+				<div class="outPic">
+					<div class="inPic">
+						<div class="upPic">
+							<img class="upPicture" src="../img/seamaster.jpg">
+						</div>
+						<div class="downContant" id="contant">
+							Omega Seamaster Diver 300
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapPic left">
+				<div class="outPic">
+					<div class="inPic">
+						<div class="upPic">
+							<img class="upPicture" src="../img/IMG_0783.jpg">
+						</div>
+						<div class="downContant" id="contant">
+							Diver300 &amp; SuperOcean
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapPic">
+				<div class="outPic">
+					<div class="inPic">
+						<div class="upPic">
+							<img class="upPicture" src="../img/lelocle.jpg">
+						</div>
+						<div class="downContant" id="contant">
+							Tissot Lelocle
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapPic right">
+				<div class="outPic">
+					<div class="inPic">
+						<div class="upPic">
+							<img class="upPicture" src="../img/fc330rm6b6.jpg">
+						</div>
+						<div class="downContant" id="contant">
+							Frederique Constant FC330RM6B6
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="rightCategory">
-			<div class="currentReadBorder">
 			<div class="currentRead">
 				최근 글 목록
 			</div>
-			<div class="read">
-				<a href="#">[category] 글제목 내용내용내용내0000용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용
-				내용내용내용내용내용내용내용내용내용내용내용내용내용내용1111내용내용내용내용내용내용내용내용내용내내용내용내내용내용
-				내용내용내내용내용내내내용내용내내용내용내내용내용222222용내용내용내</a>
-			</div>
-			<div class="read">
-				[category] 글제목
-			</div>
-			<div class="read">
-				[category] 글제목
-			</div>
-			<div class="read">
-				[category] 글제목
-			</div>
-			<div class="read">
-				[category] 글제목
-			</div>
+			<div class="currentReadBorder">
+				<ul>
+					<li>
+						[category] 글제목글제목글제목글제목글제목글제목글제목글제목글제목
+					</li>
+					<li>
+						[category] 글제목
+					</li>
+					<li>
+						[category] 글제목
+					</li>
+					<li>
+						[category] 글제목
+					</li>
+					<li>
+						[category] 글제목
+					</li>
+				</ul>
 			</div>
 			<div class="about">
 				<div class="resumeLink" id="resume">
-					<span>RESUME</span>
+					RESUME
 				</div>
 				<div class="aboutSNS">
-					
 				</div>
 			</div>
 		</div>
@@ -78,44 +156,19 @@
 				location.href = "./resume.html";
 			});
 			$("#home").on("click",function(){
-				/* 다른 사이트로 이동 */
-				// $(location).attr('href',"http://www.naver.com");
-				// location.href = "http://www.naver.com";
-				/* 다른 파일(html)로 이동 */
 				location.href = "./index.html";
 			});
-			$("#101").on("click",function(){
-				/* 다른 사이트로 이동 */
-				// $(location).attr('href',"http://www.naver.com");
-				// location.href = "http://www.naver.com";
-				/* 다른 파일(html)로 이동 */
-				location.href = "./leftCategory_menu1.html";
+			$("#write").on("click",function(){
+				location.href = "./write.html";
 			});
-
-
-			
-		});
-
-     	 function changeColor(input){
-     	  	if(input == 'day'){
-        		 document.querySelector('body').style.backgroundColor='white';
-        		 document.querySelector('body').style.color='#868e96 ';
-   	    	 	 var y = document.getElementsByClassName('dayAndNightAdjColor');
-    	    	 for(i = 0; i < y.length; i++){
-          		 console.log('day');
-         	 	 y[i].style.color = 'black';
-				}
-       		} else if(input == 'night'){
-       		  	document.querySelector('body').style.backgroundColor='black';
-        	 	document.querySelector('body').style.color='white';
-        	 	var x = document.getElementsByClassName('dayAndNightAdjColor');
-         		for(i = 0; i < x.length; i++){
-          		console.log('night');
-          		x[i].style.color = 'white';
-        		}
-       		}
-     	} 
+			$(".menu").hover(function(){
+				// 해당 li 태그에 속한 ul 태그를 보여준다
+				$("ul:first",this).show();
+			}, function(){
+				// 마우스 뗐을 때 : 숨긴다.
+				$("ul:first",this).hide();
+			});
+		});	
 	</script>
-
 </body>
 </html>

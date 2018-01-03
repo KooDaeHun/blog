@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+	<div class="wrapper">
+		<div class="leftCategory">
+			<div class="logo" style="text-align: center">
+				<img class="logoImg" src="C:\front\강의\블로그\img\stone.jpg" id="home">
+			</div>
+			<div id="menuBoder">
+				<div class="menu" id="101">
+					menu1
+				</div>
+				<div class="menu1Border" id="101">
+					<div class="menu1" id="101">
+						<div class="menu1_1" id="101">
+						menu1_1
+					</div>
+					</div>
+					
+				</div>
+				
+				<div class="menu" id="102">
+					menu2
+				</div>
+				<div class="menu" id="103">
+					menu3
+				</div>
+			</div>
+		</div>
+
+		<div class="bodyCategory">
+			
+		</div>
+
+		<div class="rightCategory">
+			<div class="currentReadBorder">
+			<div class="currentRead">
+				최근 글 목록
+			</div>
+			<div class="read">
+				[category] 글제목
+			</div>
+			<div class="read">
+				[category] 글제목
+			</div>
+			<div class="read">
+				[category] 글제목
+			</div>
+			<div class="read">
+				[category] 글제목
+			</div>
+			<div class="read">
+				[category] 글제목
+			</div>
+			</div>
+			<div class="about">
+				<div class="aboutResume" id="resume">
+					<span style="font-weight: bold;">RESUME</span>
+				</div>
+				<div class="aboutSNS">
+					
+				</div>
+			</div>
+		</div>
+	
+	<script>
+		$(document).ready(function(){
+			// 마우스 클릭 : console.log 출력
+			$("#home").on("click",function(){
+				/* 다른 사이트로 이동 */
+				// $(location).attr('href',"http://www.naver.com");
+				// location.href = "http://www.naver.com";
+				/* 다른 파일(html)로 이동 */
+				location.href = "./index.html";
+			});
+			$("#resume").on("click",function(){
+				/* 다른 사이트로 이동 */
+				// $(location).attr('href',"http://www.naver.com");
+				// location.href = "http://www.naver.com";
+				/* 다른 파일(html)로 이동 */
+				location.href = "./resume.html";
+			});
+		});
+	</script>
+
+</body>
+</html>

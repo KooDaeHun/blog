@@ -5,26 +5,36 @@
  */
 
 *{
+	padding: 0;
 	margin:0;
+	/*글자색*/
 	color: #4B4B4B;
 }
+
 li {list-style-type: none;}
 a:link { text-decoration: none;}
 a:visited { color: #4B4B4B; text-decoration: none;}
 
-@-webkit-keyframes hoveringMenuColor {
+/*@-webkit-keyframes hoveringMenuColor {
 	to {
 		background-color: none;
-		border-color: white;
+		border-color: lightgray;
+		
+		하늘색
 		color: #6CC0FF;
 	}
-}
-@-webkit-keyframes hoveringCurrentRead {
+}*/
+/*@-webkit-keyframes hoveringCurrentRead {
 	to {
 		background-color: white;
 		border-bottom-color: white;
 		color: #6CC0FF;
 	}
+}*/
+
+@-webkit-keyframes blink{
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 
@@ -36,26 +46,38 @@ a:visited { color: #4B4B4B; text-decoration: none;}
 						 margin-left: auto; margin-right: auto; max-height: 100px;}
 			
 
-			.menuBoder{width: 100%; height: 258px; float: left; text-align: center; display: inline-block; line-height:60px; padding: 0;}
+			.menuBoder{width: 100%; height: 258px; float: left; text-align: center; display: inline-block; padding: 0;}
 			.menu {margin:0; padding:0;}
-			.menu a {display:block; text-decoration: none;}
+			.menu a {display:block; text-decoration: none; height: 40px; line-height: 36px;}
 			.menu a:hover{
-					animation-name: hoveringMenuColor;
-                    line-height:50px; 
-                    border-width:5px;
-                    border-style: solid;
-                    animation-duration: 0.5s;
-                    animation-fill-mode:forwards;
                     cursor:pointer;
-                    height: 56px;
-                    border-color: lightgray;
+                    height: 36px;
+                    transition: all 0.2s;
+                    box-shadow: inset 0 36px 0 0 rgba(0,0,0,0.2);
                 }
 
 			.menu ul{display: none; 
 					 padding:0; 
 					 position: absolute; 
-					 left:102.2%; top:0; width:100%;}
-			.menu li {list-style: none; position: relative;}
+					 left:100%; top:0; width:100%;
+					 background-color: white;
+					}
+			.menu li {list-style: none; position: relative;
+					  height: 36px;
+					 }
+
+
+
+
+
+
+			
+			.writeLink{width: 43%; height: 27px; line-height: 28px;
+					   text-shadow: 3px 1.5px 0px rgba(0,0,0, 0.15);
+					   border-radius: 15px; display: inline-block; border: 2px solid; transition:all 0.5s; cursor: pointer;
+					   font-size: 14pt; font-weight: bolder;}
+			.writeLink:hover{box-shadow: inset 0px 0px 1px 4px rgba(153,153,153, 0.5);
+							  text-shadow: 0px 0px 0px rgba(255,225,255,0);}
 
 
 
@@ -67,24 +89,20 @@ a:visited { color: #4B4B4B; text-decoration: none;}
 
 
 
-		.bodyCategory{width: 70%; height: 768px; float: left;}
-				.resumeName{width: 100%; height: 768px; text-align: center;}
-					.name{width: 100%; height: 30%; text-align: center; font-weight: bolder; line-height: 68pt;  font-size: 50pt;}
-						.resumeFirstName{color: #6CC0FF;}
-						#myGitHub{font-size: 2rem; color: #4B4B4B; margin: 0;}
-						#myGitHub:hover{color: #6CC0FF;}						
-				.resumeEmail{color: gray;}
-				.resumeEmail:hover{color: #6CC0FF;}
+		.bodyCategory{width: 70%; height: 768px; float: left; margin: 0; padding: 0;}
+			.mainPageName{width: 80%; height: 100px; margin: auto; font-size: 50pt; text-align: center; 
+						  border-bottom: 3px solid #4B4B4B; border-radius: 20px;}
+			.wrapPic{width: 32.86%; height: 325.85px; float: left;}
+				.top{padding-top: 10px;}
+				.left{padding-left: 6.8px;}
+				.right{padding-right: 6.8px;}
 				
-				.resumeEducation{line-height: 45pt; font-size: 30pt; font-weight: bolder;}
-				.resumeEduTerm{color: #6CC0FF;}
-
-				.resumeSkils{line-height: 45pt; font-size: 30pt; font-weight: bolder;}
-				.devicons{font-size: 2.45rem; margin: 0;}
-				.devicons:hover{color: #6CC0FF;}
-
-				.resumeInterest{line-height: 45pt; font-size: 30pt; font-weight: bolder;}
-				.resumeAwards{line-height: 45pt; font-size: 30pt; font-weight: bolder;}
+				.outPic{width: 98%; height: 318px; display: block; margin: auto; padding-top: 2px;}
+					.inPic{width: 95%; height: 305px; margin: auto; border: 3px  solid #4B4B4B; border-radius: 20px; background-color: white;}
+						.upPic{height: 275px; border-top-right-radius: 15px; border-top-left-radius: 15px;}
+							.upPicture{border-top-right-radius: 16.7px; border-top-left-radius: 16.7px; width: 100%; height: 100%}
+						.downContant{height: 30.2px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px;}
+							#contant{text-align: center; line-height: 28px;}
 
 
 
@@ -95,6 +113,27 @@ a:visited { color: #4B4B4B; text-decoration: none;}
 
 
 
+			.resumeName{width: 100%; height: 768px; text-align: center;}
+				.name{width: 100%; height: 30%; text-align: center; font-weight: bolder; font-size: 50pt;}
+					.resumeFirstName{color: #6CC0FF;}
+					#myGitHub{font-size: 2rem; color: #4B4B4B; margin: 0;}
+					#myGitHub:hover{color: #6CC0FF;}						
+			.resumeEmail{color: gray;}
+			.resumeEmail:hover{color: #6CC0FF;}
+			
+			.resumeEducation{line-height: 45pt; font-size: 30pt; font-weight: bolder;}
+			.resumeEduTerm{color: #6CC0FF;}
+
+			.resumeSkils{line-height: 45pt; font-size: 30pt; font-weight: bolder;}
+			.devicons{font-size: 2.45rem; margin: 0;}
+			.devicons:hover{color: #6CC0FF;}
+
+			.resumeInterest{line-height: 45pt; font-size: 30pt; font-weight: bolder;}
+			.resumeAwards{line-height: 45pt; font-size: 30pt; font-weight: bolder;}
+			.award{color: #ffc107!important;}
+			.award{
+				-webkit-animation:blink 0.7s ease-in-out infinite alternate;
+			}
 
 
 
@@ -103,21 +142,28 @@ a:visited { color: #4B4B4B; text-decoration: none;}
 
 
 
-		.rightCategory{width: 15%; height: 694px; background-color: white; float: left; padding-top: 5%; box-shadow: -3px 0px 5px 0.5px rgba(153,153,153, 0.5);}
-			.currentReadBorder{width: 100%; height: 479px;}
+
+
+
+
+
+
+
+
+		.rightCategory{width: 15%; height: 692.05px; background-color: white; float: left; padding-top: 5%; 
+					   box-shadow: -3px 0px 5px 0.5px rgba(153,153,153, 0.5);}
+			.currentReadBorder{width: 100%; height: 447px; float: left;}
 			.currentRead{width: 100%; height: 30px; float: left; text-align: center; line-height: 31px;}
-				.read{width: 100%; height: 61px; float: left; overflow: hidden; text-overflow: ellipsis;}
-				.read:hover { animation-name: hoveringMenuColor;
-						   	  line-height:35px; 
-						 	  border-bottom-width: 5px;
-							  border-bottom-style:solid;
-							  animation-duration: 0.5s;
-						 	  animation-fill-mode:forwards;
-						  	  cursor:pointer;
-						 	  height: 200px;
-						      border-color: lightgray;}
+				.currentReadBorder li{ width: 92%; height: 45px; float: left; 
+									   overflow: hidden; text-overflow: ellipsis; white-space: nowrap; 
+									   padding: 1px 8px 1px 8px;}
+				.currentReadBorder li:hover { cursor: pointer;
+											  transition: all 0.2s;
+                                              box-shadow: inset 226px 0 0 0 rgba(0,0,0,0.2);
+                                              text-overflow: ellipsis;}
+
 			.about{width: 100%; height: 215px; float: left; text-align: center;}
-				.resumeLink{width: 70%; height: 50px; line-height: 49px;
+				.resumeLink{width: 70%; height: 50px; line-height: 48px;
 							 text-shadow: 3.5px 3.5px 0px rgba(0,0,0, 0.15);
 							 border-radius: 15px; display: inline-block; border: 2px solid;  transition:all 0.5s; cursor: pointer;
 							 font-size: 23pt; font-weight: bolder;}
