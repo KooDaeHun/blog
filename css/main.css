@@ -53,25 +53,14 @@ a:visited { color: #4B4B4B; text-decoration: none;}
                     cursor:pointer;
                     height: 36px;
                     transition: all 0.2s;
-                    box-shadow: inset 0 36px 0 0 rgba(0,0,0,0.2);
-                }
-
+                    box-shadow: inset 0 36px 0 0 rgba(0,0,0,0.2);}
 			.menu ul{display: none; 
 					 padding:0; 
 					 position: absolute; 
 					 left:100%; top:0; width:100%;
-					 background-color: white;
-					}
-			.menu li {list-style: none; position: relative;
-					  height: 36px;
-					 }
-
-
-
-
-
-
-			
+					 background-color: white;}
+					
+			.menu li {list-style: none; position: relative; height: 36px;}
 			.writeLink{width: 43%; height: 27px; line-height: 28px;
 					   text-shadow: 3px 1.5px 0px rgba(0,0,0, 0.15);
 					   border-radius: 15px; display: inline-block; border: 2px solid; transition:all 0.5s; cursor: pointer;
@@ -79,17 +68,7 @@ a:visited { color: #4B4B4B; text-decoration: none;}
 			.writeLink:hover{box-shadow: inset 0px 0px 1px 4px rgba(153,153,153, 0.5);
 							  text-shadow: 0px 0px 0px rgba(255,225,255,0);}
 
-
-
-
-
-
-
-
-
-
-
-		.bodyCategory{width: 70%; height: 768px; float: left; margin: 0; padding: 0;}
+		.bodyCategory{width: 70%; height: 768px; float: left; margin: 0; padding: 0; overflow-y: scroll;}
 			.mainPageName{width: 80%; height: 100px; margin: auto; font-size: 50pt; text-align: center; 
 						  border-bottom: 3px solid #4B4B4B; border-radius: 20px;}
 			.wrapPic{width: 32.86%; height: 325.85px; float: left;}
@@ -103,16 +82,6 @@ a:visited { color: #4B4B4B; text-decoration: none;}
 							.upPicture{border-top-right-radius: 16.7px; border-top-left-radius: 16.7px; width: 100%; height: 100%}
 						.downContant{height: 30.2px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px;}
 							#contant{text-align: center; line-height: 28px;}
-
-
-
-
-
-
-
-
-
-
 			.resumeName{width: 100%; height: 768px; text-align: center;}
 				.name{width: 100%; height: 30%; text-align: center; font-weight: bolder; font-size: 50pt;}
 					.resumeFirstName{color: #6CC0FF;}
@@ -134,6 +103,35 @@ a:visited { color: #4B4B4B; text-decoration: none;}
 			.award{
 				-webkit-animation:blink 0.7s ease-in-out infinite alternate;
 			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			.writeBoard{margin-top: 2%; width: 80%; height: 692px; margin-left: auto; margin-right: auto; background-color: #F6F6F6; border-radius: 20px; }
+			.writeName{margin: 30px 0 0 26px; height:20px; width: 120px;}
+			.writePassword{height: 20px; width: 120px;}
+			.wirteButton{margin-left: 331px; height: 24px; width: 68px; vertical-align: bottom; background-color: #EAEAEA; border-color: white;}
+			.writeTitle{margin: 5px 0 0 26px; height: 20px; width: 783px;}
+			
+			.imgDiv{margin: 5px 0 0 26px; width: 787px; height: 500px; background-color: white;}
+			.writeImg{width: 787px; height: 500px;}
+			.imgOpener{vertical-align: bottom; background-color: #EAEAEA; border-color: white;}
+			.writeContant{margin: 4px 0 0 25px; width: 78px; height: 68px;}
+
+
+
+
 
 
 
