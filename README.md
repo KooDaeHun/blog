@@ -6,7 +6,7 @@ Private Blog
 >로고이미지 클릭 시 index.html으로 돌아감.
 >글쓰기 버튼(selectBox구현) 클릭 시 글쓰기 페이지로 이동이 가능함.
 
-## \# bodyCategory 
+## \# bodyCategory
 >사진과 사진 제목이 게시되어 있음. overflow를 이용하여 고정 스크롤을 구현.
 
 ## \# rightCategory
