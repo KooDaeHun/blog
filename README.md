@@ -2,8 +2,7 @@ Private Blog
 ![](https://github.com/KooDaeHun/blog/blob/082fc137e4ebbcdeb83d64e93a0bcf81e3ef8edf/img/carrera.jpg)
 ================================
 # \# 목차
-## 1. 레이아웃
-
+## 1. 레이아웃  
 
 
 ### 레이아웃
