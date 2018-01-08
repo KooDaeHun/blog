@@ -6,8 +6,10 @@
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/ajaxFunction.js"></script>
 </head>
-<body>
+<body id="bodyId">
 	<div class="wrapper">
 		<div class="leftCategory">
 			<!-- 로고 -->
@@ -17,104 +19,32 @@
 			<!-- 메뉴박스 -->
 			<div class="menuBoder">
 				<ul class="menu">
-					<li>
-						<a href="#">menu1</a>
-						<ul>
-							<li><a href="#">menu1_1</a></li>
-							<li><a href="#">menu1_2</a></li>
-							<li><a href="#">menu1_3</a></li>
-						</ul>
-					</li>
+
 				</ul>
 			</div>
-		<div class="about">
-			<div class="writeLink" id="write">
-				글 쓰기
+			<div class="about">
+				<select name="selectBox" class="writeLink" id="write">
+					<option selected="글쓰기">글쓰기</option>
+				</select>
 			</div>
 		</div>
-
-		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		<div class="bodyCategory">
 			<div class="writeBoard">
-				<input class="writeName" type="text" id="nickName" placeholder="이름">
+				<input class="writeName" type="text" id="nickName" maxlength="7" placeholder="이름">
 				<input class="imgOpener" id="imgInput" type="file" name="이미지파일링크">
 				<button class="wirteButton">쓰기</button></br>
-				<input class="writeTitle" type="text" id="wTitle" placeholder="제목"></br>
+				<input class="writeTitle" type="text" id="wTitle" maxlength="50" placeholder="제목"></br>
 				<div class="imgDiv">
 					<img class="writeImg" id="image_section" src="#" alt="미리 보기">
 				</div>
-				<textarea class="writeContant"></textarea>
+				<textarea class="writeContant" onkeyup="lanChk()"></textarea>
 			</div>
 		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		<div class="rightCategory">
+			<div class="themeChange">
+				<input class="changeBut" type="button" value="change" onclick="document.getElementById('bodyId').className='blue'">
+				<input class="changeBut" type="button" value="reuturn" onclick="document.getElementById('bodyId').className=''">
+			</div>
 			<div class="currentRead">
 				최근 글 목록
 			</div>
@@ -145,56 +75,5 @@
 				</div>
 			</div>
 		</div>
-	
-	<script>
-		$(document).ready(function(){
-			// 마우스 클릭 : console.log 출력
-			$(".menu").click(function(){
-				var id = $(this).attr('id');
-			});
-
-			$("#resume").on("click",function(){
-				/* 다른 사이트로 이동 */
-				// $(location).attr('href',"http://www.naver.com");
-				// location.href = "http://www.naver.com";
-				/* 다른 파일(html)로 이동 */
-				location.href = "./resume.html";
-			});
-			$("#home").on("click",function(){
-				location.href = "./index.html";
-			});
-			$("#write").on("click",function(){
-				location.href = "./write.html";
-			});
-			$(".menu").hover(function(){
-				// 해당 li 태그에 속한 ul 태그를 보여준다
-				$("ul:first",this).show();
-			}, function(){
-				// 마우스 뗐을 때 : 숨긴다.
-				$("ul:first",this).hide();
-			});
-		});
-		
-
-// 이미지 삽입하는 부분
-		function readURL(input) {
- 
-   		 if (input.files && input.files[0]) {
-        	var reader = new FileReader();
- 
-	        reader.onload = function (e) {
-            $('#image_section').attr('src', e.target.result);
-    	    }
- 
-        	reader.readAsDataURL(input.files[0]);
-    		}
-		}
-
-		$("#imgInput").change(function(){
-   		 readURL(this);
-		});
-
-		
-	</script>
 </body>
 </html>
