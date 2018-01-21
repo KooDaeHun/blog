@@ -2,12 +2,14 @@
 <html>
 <head>
 	<title></title>
-	<link href="C:\front\강의\블로그\vendor\devicons\css\devicons.css" rel="stylesheet">
+	<link href="C:\front\Blog\vendor\devicons\css\devicons.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
 	<link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="../js/main.js"></script>
 	<script src="../js/ajaxFunction.js"></script>
+	<!--  disqus JSON코드 당겨오는 주소(?)-->
+	<!-- <script id="dsq-count-scr" src="//blog-d2mj7kcsq8.disqus.com/count.js" async></script> -->
 </head>
 <body id="bodyId">
 	<div class="wrapper">
@@ -27,7 +29,6 @@
 				</select>
 			</div>
 		</div>
-
 		<div class="bodyCategory">
 			<div class="mainPageName">My Picture</div>
 			<div class="wrapPic top left">
@@ -102,79 +103,28 @@
 					</div>
 				</div>
 			</div>
-			<div class="wrapPic top left">
-				<div class="outPic">
-					<div class="inPic">
-						<div class="upPic">
-							<img class="upPicture" src="../img/superocean.jpg">
-						</div>
-						<div class="downContant" id="contant">
-							Breitling SuperOcean II
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="wrapPic top">
-				<div class="outPic">
-					<div class="inPic">
-						<div class="upPic">
-							<img class="upPicture" src="../img/carrera.jpg">
-						</div>
-						<div class="downContant" id="contant">
-							TagHeuer Carrera Heritage
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="wrapPic top right">
-				<div class="outPic">
-					<div class="inPic">
-						<div class="upPic">
-							<img class="upPicture" src="../img/seamaster.jpg">
-						</div>
-						<div class="downContant" id="contant">
-							Omega Seamaster Diver 300
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="wrapPic left">
-				<div class="outPic">
-					<div class="inPic">
-						<div class="upPic">
-							<img class="upPicture" src="../img/IMG_0783.jpg">
-						</div>
-						<div class="downContant" id="contant">
-							Diver300 &amp; SuperOcean
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="wrapPic">
-				<div class="outPic">
-					<div class="inPic">
-						<div class="upPic">
-							<img class="upPicture" src="../img/lelocle.jpg">
-						</div>
-						<div class="downContant" id="contant">
-							Tissot Lelocle
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="wrapPic right">
-				<div class="outPic">
-					<div class="inPic">
-						<div class="upPic">
-							<img class="upPicture" src="../img/fc330rm6b6.jpg">
-						</div>
-						<div class="downContant" id="contant">
-							Frederique Constant FC330RM6B6
-						</div>
-					</div>
-				</div>
-			</div>
+			<!-- disqus 댓글 표시창 코드.(universar/작동은 안됨...) -->
+			<!-- <div id="disqus_thread"></div>
+			<script>
+				/**
+				*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+				*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+				/*
+				var disqus_config = function () {
+				this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+				this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+				};
+				*/
+				(function() { // DON'T EDIT BELOW THIS LINE
+				var d = document, s = d.createElement('script');
+				s.src = 'https://ceosbeonjjaebeulrogeu.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
 		</div>
+
 		<div class="rightCategory">
 			<div class="themeChange">
 				<input class="changeBut" type="button" value="change" onclick="document.getElementById('bodyId').className='blue'">
